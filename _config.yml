@@ -94,7 +94,7 @@ avatarurl: "https://www.gravatar.com/avatar" # Uses avatars for favicons to get 
 navigation_header:
   Home: /
   Elements: /elements/
-  Blog: /blog/
+  Blog: Blog/blog/
   Categories: /categories/
   Search: /search/
   Fork Alembic: https://github.com/cdjg35/Blog
