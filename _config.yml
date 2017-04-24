@@ -84,7 +84,9 @@ encoding: utf-8 # Make sure the encoding is right
 title: "Thoughts" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "" # Site description and default description, also used in jekyll-seo-tag
-url: "https://cdjg35.github.io/Blog/" # Site url, also used in jekyll-seo-tag
+url: "https://cdjg35.github.io/Blog" # Site url, also used in jekyll-seo-tag
+baseurl: "/Blog"
+
 repo: "https://github.com/cdjg35/Blog"
 email: "dk100587@googlemail.com"
 disqus: ""
@@ -92,11 +94,11 @@ avatarurl: "https://www.gravatar.com/avatar" # Uses avatars for favicons to get 
 
 # 8. Site navigation
 navigation_header:
-  Home: /
-  Elements: /elements/
-  Blog: /blog/
-  Categories: /categories/
-  Search: /search/
+  Home: /Blog/
+  Elements: /Blog/elements/
+  Blog: /Blog/blog/
+  Categories: /Blog/categories/
+  Search: /Blog/search/
   Fork Alembic: https://github.com/cdjg35/Blog
 
 navigation_footer:
