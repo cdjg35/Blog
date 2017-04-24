@@ -1,59 +1,122 @@
-# Site wide configuration
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site navigation
 
-title: Site Title
-locale: en_US
-description: Describe your website here.
-logo: site-logo.png
-search: true
-url: http://localhost:4000
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- demo/*
+- alembic-jekyll-theme.gemspec
 
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
+# 2. Installed Gems
 gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jemoji
 
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..2
-  enable_coderay: false
+# 3. Gem settings
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username:  # jekyll-seo-tag > Owners twitter username
+author: Dan # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Dan # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    #- https://twitter.com/DavidDarnes
+    #- https://www.facebook.com/daviddarnes
+    #- https://www.linkedin.com/in/daviddarnes
+    #- https://plus.google.com/+DavidDarnes
+    - https://github.com/cdjg35
 
-mathjax: true
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+# 5. Collections
+collections:
+  posts:
+    title: Posts # Needed for Siteleaf
+    output: true
+    description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      Welcome to the blog
+    feature_image: "https://unsplash.it/1300/400?random"
 
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # Default layout
+      image: "/assets/placeholder-social.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post # Default layout
+      image: "/assets/placeholder-social.png" # Default image for sharing
 
-# Site owner
-owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  email: you@email.com
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
-  github: #username
-  stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+title: "Thoughts" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "" # Site description and default description, also used in jekyll-seo-tag
+url: "https://cdjg35.github.io/Blog/" # Site url, also used in jekyll-seo-tag
+repo: "https://github.com/cdjg35/Blog"
+email: "dk100587@googlemail.com"
+disqus: ""
+avatarurl: "https://www.gravatar.com/avatar" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+
+# 8. Site navigation
+navigation_header:
+  Home: /
+  Elements: /elements/
+  Blog: /blog/
+  Categories: /categories/
+  Search: /search/
+  Fork Alembic: https://github.com/cdjg35/Blog
+
+navigation_footer:
+  Created by Dan:
+
+social_links:
+  Twitter: https://twitter.com/cdjg35
+  LinkedIn: https://www.linkedin.com/in/
+  Google+:
+  GitHub: https://github.com/cdjg35
+  link:
+
+sharing_links:
+  Twitter: "#1DA1F2"
+  facebook: "#3B5998"
+  Google+: "#DC4E41"
+  Pinterest: "#BD081C"
+  LinkedIn: "#0077B5"
+  tumblr: "#36465D"
+  Reddit: "#FF4500"
+  Hacker News: "#ff6600"
+  Designer News: "#2D72D9"
+  Email: ""
