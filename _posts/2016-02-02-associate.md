@@ -1,12 +1,9 @@
 ---
-layout:     post
-title:      "AWS Certified Solutions Architect"
-subtitle:   "Associate Level"
-date:       2016-02-02 07:30:00
-author:     "DK"
-header-img: "assets/img/post-bg-01.jpg"
-comments: false
+title: AWS Certified Solutions Architect
+category: AWS
+feature_image: "https://unsplash.it/1200/400?random"
 ---
+
 <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">Original from AWS</a>
 
 1.0. : Designing highly available, cost efficient, fault tolerant, scalable systems
