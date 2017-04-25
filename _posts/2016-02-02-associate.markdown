@@ -4,7 +4,7 @@ title:      "AWS Certified Solutions Architect"
 subtitle:   "Associate Level"
 date:       2016-02-02 07:30:00
 author:     "DK"
-header-img: "img/post-bg-01.jpg"
+header-img: "assets/img/post-bg-01.jpg"
 comments: false
 ---
 <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">Original from AWS</a>
