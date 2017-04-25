@@ -31,7 +31,7 @@ gems:
 
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
+paginate_path: /blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   username:  # jekyll-seo-tag > Owners twitter username
@@ -70,22 +70,22 @@ defaults:
       type: pages
     values:
       layout: page # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
+      image: "/assets/img/placeholder-social.png" # Default image for sharing
   -
     scope:
       path: ""
       type: posts
     values:
       layout: post # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
+      image: "/assets/img/placeholder-social.png" # Default image for sharing
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Thoughts" # Site name or title, also used in jekyll-seo-tag
-logo: "/Blog/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/Blog/assets/img/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "" # Site description and default description, also used in jekyll-seo-tag
 url: "https://cdjg35.github.io/Blog" # Site url, also used in jekyll-seo-tag
-baseurl: "/Blog"
+baseurl: "/Blog/"
 
 repo: "https://github.com/cdjg35/Blog"
 email: "dk100587@googlemail.com"
