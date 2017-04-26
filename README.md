@@ -26,6 +26,7 @@ I put my various notes on courses or readings into my blog. I'll add any interes
 - Setup assistance from [Barry Clark](https://www.smashingmagazine.com/author/barryclark/) and his [SmashingMag article] (https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
   - Deployment from mac using [github desktop]().
   - all configuration in the `_config.yml` file.
+- jekyl file setup from Damon (Bauer)[http://damonbauer.me/] (Organizing Jekyll Pages) [http://damonbauer.me/organizing-jekyll-pages/]
 
 ## Installation
 
