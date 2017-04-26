@@ -1,14 +1,10 @@
-# [Alembic](https://alembic.darn.es/)
-[![Gem Version](https://badge.fury.io/rb/alembic-jekyll-theme.svg)](https://badge.fury.io/rb/alembic-jekyll-theme)
+#
 
-⚗ A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.
-
-![Screenshot](https://raw.githubusercontent.com/daviddarnes/alembic/master/screenshot.png)
+Thoughts, ideas and course notes.
 
 ## Contents
 - [About](#about)
 - [Features](#features)
-- [Examples](#examples)
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [Gem dependency settings](#gem-dependency-settings)
@@ -21,66 +17,27 @@
 
 ## About
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it.
+I put my various notes on courses or readings into my blog. I'll add any interesting things I find along the way.
 
 ## Features
 
-- Available as a starter kit or as [Jekyll 3.3 theme gem](http://jekyllrb.com/docs/themes/)
-- Tested in all major browsers, that includes IE as well as Edge
-- Extensive set of shortcodes to include various elements; such as buttons, icons, figure images and more
-- Solid typographic framework from [Sassline](https://sassline.com/)
-- Configurable navigation via a single file
-- Modular Jekyll components
-- Easily interchangeable sidebar
-- Post category support in the form of a single post index page grouped by category
-- Built in live search using JavaScript
-- Contact form built in using [Formspree](https://formspree.io/)
-- Works on [GitHub Pages](https://pages.github.com/) out of the box
-- Built with [Jekyll](https://jekyllrb.com/) 3.3
-- Designed with [Siteleaf](http://www.siteleaf.com/) in mind
-- Has 9 of the most popular networks as performant sharing buttons
-- Has documentation
-
-## Examples
-
-Here are a few examples of Alembic out in the wild being used in a variety of ways:
-
-- [bitpodcast.com](https://bitpodcast.com/)
-- [katiesimonemusic.com](http://katiesimonemusic.com/)
-- [joelcagedesign.com](https://joelcagedesign.com/)
-- [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](http://case2111.github.io/)
-- [www.10people.co.uk](http://www.10people.co.uk/)
-- [hrkeni.me](http://hrkeni.me/)
-- [venuthatikonda.github.io](https://venuthatikonda.github.io/)
-- [ccs17.bsc.es](https://ccs17.bsc.es/)
+- Based on Jekyll using the [Alembic theme](https://github.com/daviddarnes/alembic) from David Darnes
+- Hosted on Github Pages
+- Setup assistance from [Barry Clark](https://www.smashingmagazine.com/author/barryclark/) and his [SmashingMag article] (https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+  - Deployment from mac using [github desktop]().
+  - all configuration in the `_config.yml` file.
 
 ## Installation
 
-### As a Boilerplate / Fork
-
-1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
+1. [Fork from the original repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the `demo/` folder and `screenshot.png` files
 4. Change the `CNAME` record to your projects' record
 5. Install bundler with `$ gem install bundler`
 6. Install gems with `$ bundle install`
 7. Run Jekyll with `$ bundle exec jekyll serve --watch`
-8. Begin hacking for your project
-
-### As a Jekyll 3.3 theme gem
-
-1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
-2. Install bundler with `$ gem install bundler`
-3. Install gems with `$ bundle install`
-4. Run Jekyll with `$ bundle exec jekyll serve --watch`
-5. Begin hacking for your project
-
-### Boilerplate & Theme differences
-
-The boilerplate kit is better for more drastic hacking and changes, a project that's quite different to any other and needs a lot of custom work done. Additionally you'll only be able to use this method if you want to host it on GitHub Pages, as [themes can't be submitted](https://pages.github.com/themes/)... yet.
-
-Using the theme will allow you to receive updates made and will be more programmatic. To make your own changes you'll need to overwrite the files with your own. For example: If I want to change the colours of my site I'll need to copy the [`_colors.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_colors.scss) file and create my own in `_sass/colors.scss` with my own changes. This is the same for all files within the theme, which means your own project will be more lean than if you were to use the boilerplate.
+8. Begin hacking
+9. Commit and Sync to github
 
 ## Configuration
 
@@ -100,6 +57,8 @@ There are a total of 4 different navigation types:
 - `social_links`: The social icon links that are shown in the sidebar
 - `sharing_links`: The social sharing buttons that are shown at the bottom of blog posts
 
+Also this is hosted on github at `\Blog` so added in a number of prepend: site.baseurl into the various navigation links.  This is defined in the `_config.yml` file. Thanks to [Parker](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) for pointing out the right place to look.
+
 All navigations can be edited using the `_config.yml` file. To see example usage either look for the `Site navigation` comment within the `/_config.yml` file or see [the nav-share.html include](#nav-sharehtml).
 
 If there are no items for the `navigation_header` or `navigation_footer`, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or simply `link`, this is so an icon can be set for the link.
@@ -111,7 +70,7 @@ There are 2 main types of includes: ones designed for the site and ones that are
 ### `button.html`
 A button that can link to a page of any kind.
 
-Example usage: `{% include button.html text="I'm a button" link="https://daviddarnes.com" %}`
+Example usage: `{% include button.html text="I'm a button" link="https://github.com" %}`
 
 Available options:
 - `text`: The text of the button _required_
@@ -217,3 +176,4 @@ There are some more specific options you can apply when creating a page or a pos
 - Thanks to [Flexbox mixin](https://github.com/mastastealth/sass-flex-mixin) by [Brian Franco](https://twitter.com/brianfranco)
 - Thanks to [Normalize](https://necolas.github.io/normalize.css/) by [Nicolas Gallagher](https://twitter.com/necolas) and [Jonathan Neal](https://twitter.com/jon_neal).
 - Thanks to [pygments-css](http://richleland.github.io/pygments-css/) for the autumn syntax highlighting, by [Rich Leland](https://twitter.com/richleland)
+- Lots of Thanks to [David Darnes] (https://daviddarnes.com) for the Alembic Theme [Alembic theme](https://github.com/daviddarnes/alembic)

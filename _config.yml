@@ -71,13 +71,6 @@ defaults:
     values:
       layout: page # Default layout
       image: "/assets/img/placeholder-social.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
-      image: "/assets/img/placeholder-social.png" # Default image for sharing
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
@@ -88,7 +81,7 @@ url: "https://cdjg35.github.io/Blog" # Site url, also used in jekyll-seo-tag
 baseurl: "/Blog"
 
 repo: "https://github.com/cdjg35/Blog"
-email: "dk100587@googlemail.com"
+email: "@googlemail.com"
 disqus: ""
 avatarurl: "https://www.gravatar.com/avatar" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
