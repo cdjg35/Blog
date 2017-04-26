@@ -94,7 +94,7 @@ navigation_header:
   Blog: /Blog/blog/
   Categories: /Blog/categories/
   Search: /Blog/search/
-  Fork Alembic: https://github.com/cdjg35/Blog
+  About: /Blog/about/
 
 navigation_footer:
   Created by Dan:
